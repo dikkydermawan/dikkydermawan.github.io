@@ -10,6 +10,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/animate.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,25 +19,74 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+    <style>
+        body{
+            position: relative;
+        }
+        #section2 {
+            padding-top: 50px; height: 500px; color: white;
+        }
+        #section3 {
+            padding-top: 50px; height: 500px; color: white;
+        }
+    </style>
   <body>
 <!--    Navbarr  -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
       <a class="navbar-brand">Dikky Dermawan S</a>
-        <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="about.asp">About</a></li>
-        <li><a href="contact.asp">Contact</a></li>   
+      </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="#section3">Contact</a></li>   
         </ul>
     </div>
   </div>
 </nav>
 <!--      Tutup Navbar-->
+<!--      Tampilan awal -->
+      <section class="awal">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <img src="Trust-the-computer-typography-hd-wallpaper-1920x1080.jpg">
+                  </div>
+              </div>
+          </div>
+      </section>
+<!--      tampilan awal akhir-->
       
-<!--      panel-->
+<!--Isi   -->
+      <section class="isi">
+          <div id="section2" class="container-fluid">
+              <div class="row">
+                  <div class="col-sm-12" >
+                          <h1 class="animated fadeIn text-center">- About -</h1>
+                      <hr>
+                  </div>
+                  <p>Hallo Perkenalkan Saya Dikky Asal Dari Bandung, Sekarang Saya Sedang Menempuh Pendidikan di Salah Satu Kampus Swasta Di Bandung yang Berlokasi Di Daerah Dipatiukur, Keinginan Yang saya Ingin Tempuh Adalah Menjadi Seorang Database Administrator.<p>
+     
+              </div> 
+          </div>
+           </section>
+<!--tutup isi-->
+      <!--      panel-->
       <section class="panel">
-    <div class="container">
+    <div id="section3" class="container-fluid">
+        <div class="row">
+                  <div class="col-sm-12" >
+                          <h1 class="animated fadeIn text-center">- Contact -</h1>
+                      <hr>
+                  </div>
+              </div> 
     <div class="row">
         <div class="col-sm-4">
   <div class="panel panel-default" >
